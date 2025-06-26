@@ -1,0 +1,47 @@
+.image-container {
+  width: 200px;
+  height: 300px;
+  background-image: url("../public/A_highly_detailed_3D-rendered_image_of_a_muscular_.png"); /* Ensure the image is inside public/images */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+}
+
+.rotate {
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+/* Style for BMI Message */
+.bmi-message {
+  position: absolute;
+  bottom: -30px;
+  font-size: 16px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+  animation: fadeOut 1s ease-in-out 3s forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

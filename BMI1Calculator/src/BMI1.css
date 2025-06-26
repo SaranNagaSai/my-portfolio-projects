@@ -1,0 +1,125 @@
+/* General Styling */
+.holder {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #FF6B6B, #FF8E53, #FFD166, #06D6A0, #118AB2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.holder .box {
+    width: 900px;
+    padding: 20px 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Form Styling */
+form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.input-field label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.input-field input,
+.input-field select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #FF6B6B, #FF8E53, #FFD166, #06D6A0, #118AB2);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #118AB2;
+}
+
+/* Background Images Based on BMI Category */
+.background-img1 {
+    background: linear-gradient(135deg, #ADD8E6, #87CEEB);
+}
+
+.background-img2 {
+    background: linear-gradient(135deg, #90EE90, #32CD32);
+}
+
+.background-img3 {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+}
+
+.background-img4 {
+    background: linear-gradient(135deg, #FF4500, #DC143C);
+}
+
+/* 3D Model Container */
+.threeD-container {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Fix unwanted gap */
+.static-image {
+    display: none; /* If an extra unwanted image is causing spacing issues */
+}
+
+/* Fix alignment and spacing between form and 3D model */
+.image-container {
+    margin: 0; /* Remove any margin causing space */
+    padding: 0;
+}
+
+/* BMI Message Styling */
+.bmi-message {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+}

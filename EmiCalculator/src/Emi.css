@@ -1,0 +1,79 @@
+.container{
+    width:100%;
+    height:100vh;
+    background: linear-gradient(120deg,red,orange,yellow,crimson);
+    display:grid;
+    place-content:center;
+}
+.container .box{
+    width:850px;
+    padding:20px 15px;
+    background: white;
+    border-radius: 4px;
+    box-shadow:0px 0px 6px gray;
+    display:flex;
+    align-items:flex-start;
+    justify-content: flex-start;
+    gap:5px;
+}
+.container .box form h2{
+    color:red;
+    padding-left: 25%;
+    font-weight:bold;
+    font-size:18px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.container .box form,.container .box .background-img{
+    width:50%;
+}
+.container .box form .input-field{
+    width:100%;
+    gap:10px;
+}
+.container .box .background-img{
+    height:350px;
+    background: url('../public/undraw_segment-analysis_cl30.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat:no-repeat;
+}
+.container .box form{
+    padding: 20px 30px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 15px;;
+}
+.container .box form input,
+.container .box form select{
+    width:100%;
+    border:1px solid gray;
+    border-radius: 3px;
+    outline:none;
+    padding:6px; 
+    margin-top: 5px;
+}
+.container .box form label{
+    font-size:14px;
+    font-weight:510;
+    gap:3px;
+}
+.container .box .input-field:focus-within input,
+.container .box .input-field:focus-within select{
+    border:1px solid orange;
+}
+.container .box  .input-field:focus-within label{
+
+    color:orange;
+}
+.container .box form button{
+    width:100%;
+    border-radius: 2px;
+    background-color: black;
+    color:orange;
+    padding:6px;
+    font-weight: 220px;
+    font-size: 16px;
+    margin-top: 30px;
+}
