@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thank You</title>
+  <style>
+    body {
+      background-color: #1f242d;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    h2 {
+      color: #7cf03d;
+      font-size: 2rem;
+      animation: fadeInUp 1s ease;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="greeting"></div>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      const name = localStorage.getItem('visitorName');
+      const greetingDiv = document.getElementById('greeting');
+
+      if (name) {
+        greetingDiv.innerHTML = `<h2>Thank you, ${name}, for visiting my profile!</h2>`;
+        localStorage.removeItem('visitorName');
+      } else {
+        greetingDiv.innerHTML = `<h2>Thank you for visiting my profile!</h2>`;
+      }
+    });
+  </script>
+
+</body>
+</html>

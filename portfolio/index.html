@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+  <title>Sai Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🔽 Responsive and Accessible Navigation Bar -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="logo">Portfolio</a>
+
+    <!-- Toggle Button for Mobile -->
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+
+    <!-- Navigation Menu -->
+    <ul class="nav-menu">
+      <li class="active"><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="About Me.html" class="nav-link">About Me</a></li>
+      <li><a href="Skills.html" class="nav-link">Skills</a></li>
+      <li><a href="Contact.html" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- 🔽 Background Bars Animation -->
+  <div class="bars-animation">
+    <div class="bar" style="--i:6;"></div>
+    <div class="bar" style="--i:5;" ></div>
+    <div class="bar" style="--i:4;"></div>
+    <div class="bar" style="--i:3;"></div>
+    <div class="bar" style="--i:2;"></div>
+    <div class="bar" style="--i:1;"></div>
+  </div>
+
+  <!-- 🔽 Home Section -->
+  <section class="home">
+    <div class="home-info">
+      <h1>Saran Naga Sai</h1>
+      <h2>I'm a 
+        <span style="--i:4" data-text="Web Developer">Web Developer</span>
+        <span style="--i:3" data-text="Data Analyst">Data Analyst</span>
+        <span style="--i:2" data-text="AI Expert">AI Expert</span>
+        <span style="--i:1" data-text="Python Programmer">Python Programmer</span>  
+      </h2>
+      <p>I am a dedicated Computer Science and Engineering undergraduate, passionate about solving real-world problems through technology.
+I enjoy exploring innovative solutions and applying my skills to practical challenges.</p>
+      
+    <div class="btn-sci">
+
+      <a href="/assests/Sai Resume.pdf" class="btn" target="_blank" aria-label="View Resume">View Resume</a>
+        <div class="sci">
+        <a href="https://github.com/SaranNagaSai" target="_blank" aria-label="GitHub" rel="noopener noreferrer">
+        <i class='bxl bx-github'></i>
+        </a>
+        <a href="https://www.linkedin.com/in/sarannagasait" target="_blank" aria-label="LinkedIn" rel="noopener noreferrer">
+        <i class='bxl bx-linkedin-square'></i>
+        </a>
+        <a href="https://wa.me/919876543210" target="_blank" aria-label="WhatsApp" rel="noopener noreferrer">
+        <i class='bxl bx-whatsapp'></i>
+        </a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- 🔽 Profile Image with Decorative Border -->
+    <div class="home-img">
+      <div class="img-box">
+        <div class="img-item">
+          <img src="SaiAi2.png" alt="Profile Image" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔽 Toggle Script for Mobile Menu -->
+  <script>
+    const toggleBtn = document.querySelector('.nav-toggle');
+    const menu = document.querySelector('.nav-menu');
+
+    toggleBtn.addEventListener('click', () => {
+      const expanded = toggleBtn.getAttribute('aria-expanded') === 'true';
+      toggleBtn.setAttribute('aria-expanded', !expanded);
+      menu.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
